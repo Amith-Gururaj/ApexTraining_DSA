@@ -35,5 +35,8 @@ public class Main {
         System.out.println(StringToIntegerConvertion.parseStringToInteger("+1a3"));
 
         System.out.println(ShortestSubArraySum.shortestSubArrayMatchingSum(new int[]{2,4,6,1,9,1,1,1,2,1},12));
+
+        System.out.println(SmallestMissingValue.findSmallestMissingValueInSortedArray(new int[]{0,1,2,3,4,7}));
+
     }
 }
