@@ -7,7 +7,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-        String s = "a";
+        String s = "aabbbcdfff";
 
         RunLengthEncoding ob = new RunLengthEncoding();
 
@@ -33,5 +33,7 @@ public class Main {
         System.out.println(FirstNonRepeatingCharacter.FindFirstNonRepeatingCharacter("1221334154"));
 
         System.out.println(StringToIntegerConvertion.parseStringToInteger("+1a3"));
+
+        System.out.println(ShortestSubArraySum.shortestSubArrayMatchingSum(new int[]{2,4,6,1,9,1,1,1,2,1},12));
     }
 }
