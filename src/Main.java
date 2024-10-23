@@ -40,7 +40,7 @@ public class Main {
 
         System.out.println(LongestPalindrome.buildLongestPalindrome("abccccdd"));
 
-        System.out.println(Arrays.deepToString(PascalProgram.buildPascalProgramArray(3)));
+//        System.out.println(Arrays.deepToString(PascalProgram.buildPascalProgramArray(3)));
 
         List<List<Integer>> op = PascalProgram.buildPascalProgram(5);
         for(List<Integer> val : op)
