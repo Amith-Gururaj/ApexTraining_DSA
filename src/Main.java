@@ -38,5 +38,12 @@ public class Main {
 
         System.out.println(SmallestMissingValue.findSmallestMissingValueInSortedArray(new int[]{0,1,2,3,4,7}));
 
+        System.out.println(LongestPalindrome.buildLongestPalindrome("abccccdd"));
+
+        System.out.println(Arrays.deepToString(PascalProgram.buildPascalProgramArray(3)));
+
+        List<List<Integer>> op = PascalProgram.buildPascalProgram(5);
+        for(List<Integer> val : op)
+            System.out.println(Arrays.toString(val.toArray()));
     }
 }
