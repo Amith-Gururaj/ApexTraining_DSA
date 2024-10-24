@@ -45,5 +45,10 @@ public class Main {
         List<List<Integer>> op = PascalProgram.buildPascalProgram(5);
         for(List<Integer> val : op)
             System.out.println(Arrays.toString(val.toArray()));
+
+        int[] arr1 = {2,5};
+        int[] arr2 = {1,3,4,6,8};
+
+        System.out.println(MedianOfTwoArrays.MedianOfTwoSortedArrays(arr1, arr2));
     }
 }
