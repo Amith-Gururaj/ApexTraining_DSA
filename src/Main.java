@@ -50,5 +50,8 @@ public class Main {
         int[] arr2 = {1,3,4,6,8};
 
         System.out.println(MedianOfTwoArrays.MedianOfTwoSortedArrays(arr1, arr2));
+
+        int[] arr = {10,5,6,3,2,20,100,80};
+        System.out.println(Arrays.toString(WavedArrayProblem.getWavedArray(arr)));
     }
 }
