@@ -53,5 +53,17 @@ public class Main {
 
         int[] arr = {10,5,6,3,2,20,100,80};
         System.out.println(Arrays.toString(WavedArrayProblem.getWavedArray(arr)));
+
+        System.out.println(WaysToClimb.findWaysToClimb(3));
+
+        String[][] students = {
+                {"Charles", "84"},
+                {"John", "100"},
+                {"Andy", "37"},
+                {"John", "23"},
+                {"Charles", "20"}
+        };
+
+        System.out.println(HighestAverageMarks.findMaxAverage(students));
     }
 }
