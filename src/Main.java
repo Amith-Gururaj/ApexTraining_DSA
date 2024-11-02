@@ -75,5 +75,8 @@ public class Main {
                 "10.0.0.2 bytes=32 time=50ms TTL=93",
         };
         MaxIPAddress.maxIpAddresses(ips);
+
+        System.out.println(PowerOfTen.isPowerOfTen(10));
+        System.out.println(PowerOfTen.isPowerOfTen(20));
     }
 }
