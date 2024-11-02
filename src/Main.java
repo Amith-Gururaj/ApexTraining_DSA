@@ -1,3 +1,5 @@
+import org.w3c.dom.Node;
+
 import java.io.PrintStream;
 import java.util.Arrays;
 import java.util.List;
@@ -65,5 +67,13 @@ public class Main {
         };
 
         System.out.println(HighestAverageMarks.findMaxAverage(students));
+
+        String[] ips = {
+                "10.0.0.1 bytes=32 time=50ms TTL=63",
+                "10.0.0.2 bytes=32 time=50ms TTL=73",
+                "10.0.0.4 bytes=32 time=50ms TTL=83",
+                "10.0.0.2 bytes=32 time=50ms TTL=93",
+        };
+        MaxIPAddress.maxIpAddresses(ips);
     }
 }
