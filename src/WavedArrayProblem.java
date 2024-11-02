@@ -3,14 +3,20 @@ import java.util.Arrays;
 public class WavedArrayProblem {
 
     public static int[] getWavedArray(int[] arr) {
-        Arrays.sort(arr);
-        int[] res = new int[arr.length];
-        int i = 0, j = arr.length-1, k = 0;
-        while(i<=j){
-            res[k++] = arr[j--];
-            if(i<j)
-                res[k++] = arr[i++];
+        for (int i = 0; i < arr.length; i+=2) {
+
+            if (i > 0 && arr[i] < arr[i-1]) {
+                int temp = arr[i];
+                arr[i] = arr[i-1];
+                arr[i-1] = temp;
+            }
+
+            if (i<arr.length-1 && arr[i] < arr[i+1]) {
+                int temp = arr[i];
+                arr[i] = arr[i+1];
+                arr[i+1] = temp;
+            }
         }
-        return res;
+        return arr;
     }
 }
