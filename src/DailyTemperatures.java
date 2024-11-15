@@ -10,6 +10,7 @@ public class DailyTemperatures {
         System.out.println(Arrays.toString(findTemperaturesDiffDaysApproach2(temperatures)));
     }
 
+    //Approach 1
     private static int[] findTemperaturesDiffDaysApproach1(int[] arr) {
         int i = 0;
         int j = 1;
@@ -33,6 +34,7 @@ public class DailyTemperatures {
         return res;
     }
 
+    //Approach 2
     private static int[] findTemperaturesDiffDaysApproach2(int[] arr) {
         int[] res = new int[arr.length];
         for(int i=0;i<arr.length; i++){
