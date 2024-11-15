@@ -8,18 +8,7 @@ public class IncreasingTripletSubsequence {
         System.out.println(IncreasingTripletSubsequenceApproach2(nums));
     }
 
-    private static boolean IncreasingTripletSubsequenceApproach2(int[] nums) {
-        if(nums.length < 3){
-            return false;
-        }
-        int i = 0, j = i+1, k = j+1;
-        for(; k<nums.length; i++,j++,k++){
-            if(nums[i]<nums[j] && nums[j]<nums[k])
-                return true;
-        }
-        return false;
-    }
-
+    //Approach 1
     private static boolean IncreasingTripletSubsequenceApproach1(int[] nums) {
         if(nums.length < 3){
             return false;
@@ -43,6 +32,19 @@ public class IncreasingTripletSubsequence {
             }
         }
 
+        return false;
+    }
+
+    //Approach 2
+    private static boolean IncreasingTripletSubsequenceApproach2(int[] nums) {
+        if(nums.length < 3){
+            return false;
+        }
+        int i = 0, j = i+1, k = j+1;
+        for(; k<nums.length; i++,j++,k++){
+            if(nums[i]<nums[j] && nums[j]<nums[k])
+                return true;
+        }
         return false;
     }
 }
